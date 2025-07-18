@@ -1,0 +1,195 @@
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: var(--secondary-font-family);
+  color: #fff;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+}
+
+body.about .header {
+  background: url('../images/about-banner.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* override 'fixed' */
+  height: auto; /* or whatever height you want */
+}
+
+body.about header {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  position: relative; /* was absolute/fixed on home, change to relative here */
+  top: auto;
+  left: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+body.about nav {
+  display: block;
+}
+
+body.about nav svg {
+  display: block;
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#about-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+}
+
+.about-us-container {
+  background: none;
+  max-width: 1200px;
+  width: 100%;
+  padding: 50px 100px;
+  margin: 0 auto;
+}
+
+.about-us-title {
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-size: 48px;
+  color: var(--accent-color);
+  margin: 0px;
+  padding-bottom: 25px;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-us-image-col {
+  flex: 0 0 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-us-image {
+  max-width: 242px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-text-col {
+  flex: 1 1 0;
+  margin-top: 0px;
+}
+
+.about-us-text-col p:first-child {
+  margin-top: 0;
+}
+
+.about-us-text-col p {
+  font-size: 1.07rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.about-us-text-col a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.about-us-text-col hr {
+  border: none;
+  border-top: 1px solid var(--accent-color);
+  margin: 24px 0 18px 0;
+}
+
+.about-us-quote-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.about-us-quote-image {
+  width: 180px;
+  /* object-fit: cover; */
+}
+
+.about-us-quote-block {
+  flex: 1 1 0;
+}
+
+.about-us-quote-block blockquote {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+  border: none;
+  background: none;
+}
+
+.about-us-quote-author {
+  color: #b7c8d1;
+  font-size: 1rem;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 900px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .about-us-image-col,
+  .about-us-text-col {
+    width: 100%;
+    min-width: 0;
+  }
+  .about-us-image {
+    max-width: 90vw;
+    margin-bottom: 24px;
+  }
+  .about-us-quote-row {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .about-us-quote-image {
+    width: 100%;
+    max-width: 90vw;
+    margin-bottom: 16px;
+  }
+  .about-us-quote-block blockquote {
+    font-size: 1rem;
+  }
+  .about-us-title {
+    font-size: 2rem;
+  }
+  .about-us-container {
+    padding: 0 8px;
+  }
+}
+
+
+#vision-and-values {
+    background-color: #fff;
+    height: 1000px;
+}
+
+#our-team {
+    background-color: var(--secondary-background-color);
+    height: 1500px;
+}

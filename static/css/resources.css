@@ -1,0 +1,88 @@
+body {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2rem;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+}
+
+body.resources .header {
+  background: url('../images/resources-banner.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* override 'fixed' */
+  height: auto; /* or whatever height you want */
+}
+
+body.resources header {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  position: relative; /* was absolute/fixed on home, change to relative here */
+  top: auto;
+  left: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+body.resources nav {
+  display: block;
+}
+
+body.resources nav svg {
+  display: block;
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.category {
+    margin-bottom: 2rem;
+    
+}
+
+.category h2 {
+    font-family: "Avenir Black", sans-serif;
+    font-size: 20pt;
+    color: var(--hero-title-color);
+    margin-bottom: 1rem;
+}
+
+.entry {
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 16pt;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+}
+
+.entry strong {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.entry p.description {
+    font-family: "Adobe Garamond Pro", serif;
+    font-size: 16pt;
+    color: var(--text-color);
+    margin: 0.25rem 0 0.75rem 0;
+}
+
+p {
+font-family: "Adobe Garamond Pro", serif;
+font-size: 16pt;
+color: var(--hero-title-color);
+margin: 0.25rem 0 0.75rem 0;
+}
+
+.resources-row {
+  width: 80%;
+  padding-left: calc(10%);
+}
